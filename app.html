@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIMPLE WEB APPLICATION</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="jscript.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>STUDENT GRADE POINT AVERAGE CALCULATOR</h1>
+		<section>
+			<div class="inputs">
+				Course One: <br>
+				<input type="text" id="course-one"><p></p>
+				Course two: <br>
+				<input type="text" id="course-two"><p></p>
+				Course three: <br>
+				<input type="text" id="course-three"><p></p>
+				Course four: <br>
+				<input type="text" id="course-four"><p></p>
+				Course five: <br>
+				<input type="text" id="course-five"><p></p>
+				Course six: <br>
+				<input type="text" id="course-six"><p></p>
+			</div>
+			<div class="inputs">
+				Credit H/R: <br>
+				<select id="credit-one">
+					<option value="0">0</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<p></p>
+				Credit H/R: <br>
+				<select id="credit-two">
+					<option value="0">0</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<p></p>
+				Credit H/R: <br>
+				<select id="credit-three">
+					<option value="0">0</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<p></p>
+				Credit H/R: <br>
+				<select id="credit-four">
+					<option value="0">0</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<p></p>
+				Credit H/R: <br>
+				<select id="credit-five">
+					<option value="0">0</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<p></p>
+				Credit H/R: <br>
+				<select id="credit-six">
+					<option value="0">0</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<p></p>
+			</div>
+			<div class="inputs">
+				Letter Grade: <br>
+				<select id="letter-one">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+				<p></p>
+				Letter Grade: <br>
+				<select id="letter-two">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+				<p></p>
+				Letter Grade: <br>
+				<select id="letter-three">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+				<p></p>
+				Letter Grade: <br>
+				<select id="letter-four">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+				<p></p>
+				Letter Grade: <br>
+				<select id="letter-five">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+				<p></p>
+				Letter Grade: <br>
+				<select id="letter-six">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="F">F</option>
+				</select>
+				<p></p>
+			</div>
+		</section>
+		<section>
+			<div class="result">
+				<h3>GPA RESULT TABLE</h3>
+				<table>
+					<tr>
+						<th>COURSES</th>
+						<th>CREDIT</th>
+						<th>LETTER GRADE</th>
+						<th>POINT</th>
+					</tr>
+					<tr>
+						<td id="crs-1"></td>
+						<td id="crd-1">0</td>
+						<td id="ltr-1"></td>
+						<td id="pnt-1"></td>
+					</tr>
+					<tr>
+						<td id="crs-2"></td>
+						<td id="crd-2">0</td>
+						<td id="ltr-2"></td>
+						<td id="pnt-2"></td>
+					</tr>
+					<tr>
+						<td id="crs-3"></td>
+						<td id="crd-3">0</td>
+						<td id="ltr-3"></td>
+						<td id="pnt-3"></td>
+					</tr>
+					<tr>
+						<td id="crs-4"></td>
+						<td id="crd-4">0</td>
+						<td id="ltr-4"></td>
+						<td id="pnt-4"></td>
+					</tr>
+					<tr>
+						<td id="crs-5"></td>
+						<td id="crd-5">0</td>
+						<td id="ltr-5"></td>
+						<td id="pnt-5"></td>
+					</tr>
+					<tr>
+						<td id="crs-6"></td>
+						<td id="crd-6">0</td>
+						<td id="ltr-6"></td>
+						<td id="pnt-6"></td>
+					</tr>
+				</table>
+
+
+				<div class="display-result">
+					<span id="credit-result">Total Credit: 0</span>
+					<span id="right-float">Accum GPA: </span>
+				</div>
+
+
+				<button id="btn-1" onclick="Calculate();">CALCULATE</button>
+				<button id="btn-2" onclick="Clear();">RESET</button>
+				<button id="btn-3" onclick="Close();">CLOSE</button>
+			</div>
+		</section>
+
+
+	</div>
+</body>
+</html>
